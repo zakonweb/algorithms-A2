@@ -1,0 +1,17 @@
+Recursive functions:
+When a function calls itself from within its body it is called recursive function.
+E.g:
+
+X=Factorial(4)
+
+Function Factorial(s as integer) as integer
+1.  If (s = 1) Then 'STOP value
+2.    Factorial = 1 'return 1
+3.  Else
+4.    Factorial = Factorial(s-1) * s 'Recursion occuring
+5.  Endif
+End function
+
+Line 2 and 4 shows that it is a function as it is returning a value there OR because function name is appearing on the left of the Assignment symbol =.
+
+Line 4 shows that it is a RECURSIVE function because function name is appearing on the right side of the Assignment symbol = OR because function is calling itself fro m within its body.
