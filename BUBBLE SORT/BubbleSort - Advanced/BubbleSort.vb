@@ -9,6 +9,7 @@
             Console.Write("Enter a number: ")
             MyList(Index) = Console.ReadLine()
         Next
+
         MaxIndex = 7
         n = MaxIndex - 1
         Do
@@ -23,6 +24,7 @@
             Next
             n = n - 1
         Loop Until NoMoreSwaps
+
         For Index = 1 To 7
             Console.Write(MyList(Index) & " ")
         Next
