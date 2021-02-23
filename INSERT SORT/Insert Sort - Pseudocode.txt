@@ -1,0 +1,26 @@
+// Insert Sort Algorithm
+PROCEDURE inserSort(arr[])
+  DECLARE firstP, secondP, UB, Temp, i : INTEGER
+  LB ← 0
+  UB ← LEN(arr)-1
+  firstP ← LB +1
+  SecondP ← 0
+  Temp ← -1
+  i ← 0
+
+  FOR firstP ← LB+1 TO UB
+    FOR secondP ← LB TO fisrtP -1
+      IF arr[secondP] > arr[firstP]
+        THEN
+          Temp ← arr[firstP]
+          
+          FOR i ← firstP TO secondP +1 STEP -1
+            arr[i] ← arr[i-1]
+          NEXT i
+          
+          arr[secondP] ← Temp
+          EXIT FOR
+      END IF
+    NEXT secondP
+  NEXT firstP
+END PROCEDURE

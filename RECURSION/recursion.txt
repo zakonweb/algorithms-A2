@@ -1,0 +1,24 @@
+//Recursion
+// 4! = 4x3x2x1 Factorial
+
+//Simple Factorial Function
+Function Factorial(n : INTEGER) AS INTEGER
+  DECLARE f : INTEGER
+  f ← 1
+
+  FOR i ← n TO 1 STEP -1
+    f ← f * i
+  NEXT i
+
+  RETURN f
+END FUNCTION
+
+//Recursive Factorial
+Function RecursiveFactorial(n : INTEGER) AS INTEGER
+  IF n = 1  //Base case 
+    THEN
+      RETURN 1
+    ELSE
+      RETURN n * RecursiveFactorial(n-1) //General case
+  END IF
+END FUNCTION
