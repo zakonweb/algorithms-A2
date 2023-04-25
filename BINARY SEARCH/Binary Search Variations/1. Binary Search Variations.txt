@@ -1,0 +1,25 @@
+Binary search is a widely used search algorithm that operates on a sorted list, repeatedly dividing the search interval in half. The algorithm has several variations, each with a slightly different approach. Here are some common variations:
+
+1. Basic Binary Search: Questions asked in AL belong to this implementation. 
+This is the standard version of the algorithm, which searches for a target value within a sorted array by repeatedly dividing the search interval in half. It compares the middle element of the interval with the target value, and if they are equal, the search is successful. Otherwise, the search continues in either the left or right half of the interval, depending on whether the target is smaller or larger than the middle element.
+
+//* These 2 to 5 varriations are for the practices purposes *//
+2. Leftmost Binary Search: This variation searches for the leftmost occurrence of a target value in a sorted array that may contain duplicates. It works similarly to the basic binary search, but with an additional check to determine if the target has been found. If the middle element matches the target, the search continues in the left/lower half to find the leftmost occurrence.
+
+3. Rightmost Binary Search: This variation searches for the rightmost occurrence of a target value in a sorted array that may contain duplicates. Like the leftmost binary search, it uses the basic binary search approach but adjusts the search interval to find the rightmost occurrence of the target value in the right/upper half.
+
+4. Lower Bound Binary Search: This variation finds the index of the first element in a sorted array that is greater than or equal to a target value. If the target value is not found, it returns the index where the target should be inserted to maintain the sorted order.
+
+5. Upper Bound Binary Search: This variation finds the index of the first element in a sorted array that is strictly greater than a target value. If the target value is not found, it returns the index where the target should be inserted to maintain the sorted order.
+
+The iterative and recursive approaches are two distinct ways of implementing the binary search algorithm itself. Here's a brief description of both:
+
+Iterative Binary Search: In this approach, the binary search algorithm is implemented using a loop (usually a while or for loop). The search interval is updated within the loop until the target element is found or the interval becomes empty. This approach is generally more efficient in terms of memory usage, as it doesn't require additional memory to store the call stack, unlike the recursive version.
+
+Recursive Binary Search: This approach implements the binary search algorithm using recursion. The function calls itself with updated search intervals until the target element is found or the interval becomes empty. Recursive implementations are often more concise and easier to understand, but they can be less memory-efficient due to the overhead of maintaining the call stack.
+
+Iterative and recursive approaches are two different ways to implement any algorithm, including binary search and its variations. They are not separate types of binary search algorithms based on their purpose but rather describe the implementation style of those algorithms.
+
+Iterative and recursive implementation styles can be applied to any of the binary search algorithm types mentioned earlier, such as standard binary search, leftmost binary search, rightmost binary search, lower bound binary search and upper bound binary search.
+
+In summary, iterative and recursive are part of the implementation style, while the types of binary search algorithms are based on their purpose and functionality. When implementing a specific binary search algorithm type, you can choose between an iterative or recursive implementation based on your preference, problem requirements, and performance considerations (memory usage, code readability, etc.).

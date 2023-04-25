@@ -1,0 +1,80 @@
+Here's a detailed explanation of the time and space complexity of each binary search variation:
+
+1. Standard Binary Search:
+Time complexity: O(log(n))
+	• In each iteration or recursion, the search space is reduced by 
+	half, resulting in a logarithmic time complexity.
+
+Space complexity:
+• Iterative: O(1)
+	• The iterative implementation uses a constant amount of extra memory 
+	(only the variables left, right, and mid) and does not require any additional space.
+
+• Recursive: O(log(n))
+	• The recursive implementation has a logarithmic space complexity because each 
+	recursive call adds a new frame to the call stack, and the maximum depth of the recursion is log(n).
+
+2. Leftmost Binary Search:
+Time complexity: O(log(n))
+	• Similar to the standard binary search, the search space is reduced by 
+	half in each iteration or recursion, resulting in a logarithmic time complexity.
+
+Space complexity:
+	• Iterative: O(1)
+		• The iterative implementation uses a constant amount of extra memory 
+		(only the variables left, right, mid, and result) and does not require any additional space.
+
+	• Recursive: O(log(n))
+		• The recursive implementation has a logarithmic space complexity 
+		because each recursive call adds a new frame to the call stack, and the maximum depth of the 
+		recursion is log(n).
+
+3. Rightmost Binary Search:
+	Time complexity: O(log(n))
+		• Similar to the standard binary search, the search space is reduced by half 
+		in each iteration or recursion, resulting in a logarithmic time complexity.
+
+	Space complexity:
+		• Iterative: O(1)
+			• The iterative implementation uses a constant amount of extra memory 
+			(only the variables left, right, mid, and result) and does not require 
+			any additional space.
+		• Recursive: O(log(n))
+			• The recursive implementation has a logarithmic space complexity because 
+			each recursive call adds a new frame to the call stack, and the maximum 
+			depth of the recursion is log(n).
+
+4. Lower Bound Binary Search:
+	Time complexity: O(log(n))
+		• Similar to the standard binary search, the search space is reduced by half in 
+		each iteration or recursion, resulting in a logarithmic time complexity.
+
+	Space complexity:
+		• Iterative: O(1)
+			• The iterative implementation uses a constant amount of extra memory 
+			(only the variables left, right, mid, and result) and does not require 
+			any additional space.
+
+		• Recursive: O(log(n))
+			• The recursive implementation has a logarithmic space complexity because 
+			each recursive call adds a new frame to the call stack, and the maximum depth
+			of the recursion is log(n).
+
+5. Upper Bound Binary Search:
+	Time complexity: O(log(n))
+		• Similar to the standard binary search, the search space is reduced by half in 
+		each iteration or recursion, resulting in a logarithmic time complexity.
+
+
+	Space complexity:
+		• Iterative: O(1)
+			• The iterative implementation uses a constant amount of extra memory 
+			(only the variables left, right, mid, and result) and does not require 
+			any additional space.
+
+		• Recursive: O(log(n))
+			• The recursive implementation has a logarithmic space complexity because 
+			each recursive call adds a new frame to the call stack, and the maximum 
+			depth of the recursion is log(n).
+
+In summary, all five binary search variations have a logarithmic time complexity of O(log(n)) because the search space is reduced by half in each step. The iterative implementations have a constant space complexity of O(1), while the recursive implementations have a logarithmic space complexity of O(log(n)) due to the call stack's depth.
