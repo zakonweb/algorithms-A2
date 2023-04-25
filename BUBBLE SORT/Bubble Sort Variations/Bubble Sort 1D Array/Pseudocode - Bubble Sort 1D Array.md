@@ -1,3 +1,4 @@
+```
 PROCEDURE BubbleSort(ByRef arr[])
     DECLARE n, i, j, temp : INTEGER
     n ← length(arr)
@@ -11,7 +12,8 @@ PROCEDURE BubbleSort(ByRef arr[])
         NEXT
     NEXT
 END PROCEDURE
-
+```
+```
 PROCEDURE ModifiedBubbleSort(ByRef arr[])
     DECLARE n, i, j, temp : INTEGER
     DECLARE swapped : BOOLEAN
@@ -31,7 +33,8 @@ PROCEDURE ModifiedBubbleSort(ByRef arr[])
         END IF
     NEXT
 END PROCEDURE
-
+```
+```
 PROCEDURE RecursiveBubbleSort(ByRef arr[], n)
     DECLARE i, temp : INTEGER
     IF n ← 1 THEN
@@ -47,7 +50,8 @@ PROCEDURE RecursiveBubbleSort(ByRef arr[], n)
     NEXT
     CALL RecursiveBubbleSort(arr, n-1)
 END PROCEDURE
-
+```
+```
 PROCEDURE CocktailShakerSort(ByRef arr[])
     DECLARE start, end, n, i, temp : INTEGER
     DECLARE swapped : BOOLEAN
@@ -81,7 +85,8 @@ PROCEDURE CocktailShakerSort(ByRef arr[])
         start ← start + 1
     END WHILE
 END PROCEDURE
-
+```
+```
 PROCEDURE CombSort(ByRef arr[])
     DECLARE n, i, gap, temp : INTEGER
     DECLARE swapped : BOOLEAN
@@ -106,7 +111,8 @@ PROCEDURE CombSort(ByRef arr[])
         NEXT
     END WHILE
 END PROCEDURE
-
+```
+```
 DECLARE i, choice, rand : INTEGER
 choice ← 0
 rand ← new Random()
@@ -151,3 +157,4 @@ While choice <> 6
         OUTPUT "Exiting!"
     End If
 End While
+```

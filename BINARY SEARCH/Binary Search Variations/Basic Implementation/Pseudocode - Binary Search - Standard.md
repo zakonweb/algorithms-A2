@@ -1,3 +1,5 @@
+```
+```
 FUNCTION iterativeBinarySearch(arr[], target) RETURNS INTEGER
     DECLARE left, right, mid : INTEGER
     left ← 0
@@ -15,7 +17,8 @@ FUNCTION iterativeBinarySearch(arr[], target) RETURNS INTEGER
     ENDWHILE
     RETURN -1
 END FUNCTION
-
+```
+```
 FUNCTION recursiveBinarySearch(arr[], target, left, right) RETURN INTEGER
     DECLARE left, right, mid : INTEGER
     IF left > right THEN
@@ -30,7 +33,8 @@ FUNCTION recursiveBinarySearch(arr[], target, left, right) RETURN INTEGER
         RETURN recursiveBinarySearch(arr, target, left, mid - 1)
     END IF
 END FUNCTION
-
+```
+```
 PROCEDURE DisplayMenu()
     OUTPUT "Standard Binary Search Variations:"
     OUTPUT "1. Iterative Binary Search"
@@ -62,3 +66,4 @@ WHILE TRUE DO
         OUTPUT"Invalid choice. Please try again."
     END IF
 END WHILE
+```

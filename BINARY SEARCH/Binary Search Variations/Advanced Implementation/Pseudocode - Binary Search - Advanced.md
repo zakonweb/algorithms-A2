@@ -1,5 +1,5 @@
-MODULE BinarySearch
-
+```
+```
 FUNCTION IterativeBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER) RETURNS INTEGER
     DECLARE left, right, mid: INTEGER
     left ← 0
@@ -19,7 +19,8 @@ FUNCTION IterativeBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER) RETURNS I
 
     RETURN -1
 END FUNCTION
-
+```
+```
 FUNCTION RecursiveBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER, left: INTEGER, right: INTEGER) RETURNS INTEGER
     IF left <= right THEN
         DECLARE mid: INTEGER
@@ -36,7 +37,8 @@ FUNCTION RecursiveBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER, left: INT
 
     RETURN -1
 END FUNCTION
-
+```
+```
 FUNCTION IterativeLeftmostBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER) RETURNS INTEGER
     DECLARE left, right, mid, result: INTEGER
     left ← 0
@@ -58,7 +60,8 @@ FUNCTION IterativeLeftmostBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER) R
 
     RETURN result
 END FUNCTION
-
+```
+```
 FUNCTION RecursiveLeftmostBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER, left: INTEGER, right: INTEGER, result: INTEGER = -1) RETURNS INTEGER
     IF left <= right THEN
         DECLARE mid: INTEGER
@@ -76,7 +79,8 @@ FUNCTION RecursiveLeftmostBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER, l
 
     RETURN result
 END FUNCTION
-
+```
+```
 FUNCTION IterativeRightmostBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER) RETURNS INTEGER
     DECLARE left, right, mid, result: INTEGER
     left ← 0
@@ -98,7 +102,8 @@ FUNCTION IterativeRightmostBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER) 
 
     RETURN result
 END FUNCTION
-
+```
+```
 FUNCTION RecursiveRightmostBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER, left: INTEGER, right: INTEGER, result: INTEGER = -1) RETURNS INTEGER
     IF left <= right THEN
         DECLARE mid: INTEGER
@@ -116,7 +121,8 @@ FUNCTION RecursiveRightmostBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER, 
 
     RETURN result
 END FUNCTION
-
+```
+```
 FUNCTION IterativeLowerBoundBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER) RETURNS INTEGER
     DECLARE left, right, mid, result: INTEGER
     left ← 0
@@ -139,7 +145,8 @@ FUNCTION IterativeLowerBoundBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER)
 
     RETURN result
 END FUNCTION
-
+```
+```
 FUNCTION RecursiveLowerBoundBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER, left: INTEGER, right: INTEGER, result: INTEGER = -1) RETURNS INTEGER
     IF left <= right THEN
         DECLARE mid: INTEGER
@@ -158,7 +165,8 @@ FUNCTION RecursiveLowerBoundBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER,
 
     RETURN result
 END FUNCTION
-
+```
+```
 FUNCTION IterativeUpperBoundBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER) RETURNS INTEGER
     DECLARE left, right, mid, result: INTEGER
     left ← 0
@@ -178,7 +186,8 @@ FUNCTION IterativeUpperBoundBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER)
 
     RETURN result
 END FUNCTION
-
+```
+```
 FUNCTION RecursiveUpperBoundBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER, left: INTEGER, right: INTEGER, result: INTEGER = -1) RETURNS INTEGER
     IF left <= right THEN
         DECLARE mid: INTEGER
@@ -194,7 +203,8 @@ FUNCTION RecursiveUpperBoundBinarySearch(arr: ARRAY OF INTEGER, target: INTEGER,
 
     RETURN result
 END FUNCTION
-
+```
+```
 DECLARE arr: ARRAY [1:22] OF INTEGER
 arr ← [1, 2, 4, 6, 7, 9, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40]
 
@@ -254,3 +264,4 @@ WHILE True
 
     OUTPUT ""
 END WHILE
+```
