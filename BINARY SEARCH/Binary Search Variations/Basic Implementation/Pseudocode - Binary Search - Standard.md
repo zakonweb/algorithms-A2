@@ -1,5 +1,4 @@
 ```
-```
 FUNCTION iterativeBinarySearch(arr[], target) RETURNS INTEGER
     DECLARE left, right, mid : INTEGER
     left ← 0
