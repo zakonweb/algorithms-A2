@@ -1,4 +1,4 @@
-Here is a detailed explanation of the code:
+Here is a detailed explanation of the codes above:
 
 The code implements various bubble sorting algorithms' variations for an integer array of size 10. It presents a menu to the user with the following options:
 
