@@ -59,7 +59,7 @@ public class TryCatchExample {
     }
 }
 ```
-## VB.NET 2010
+## 3. VB.NET
 
 In VB.NET, you use `Try` and `Catch` blocks. The code that might throw an exception is placed inside the `Try` block, and the code to handle the exception is placed inside the `Catch` block.
 
