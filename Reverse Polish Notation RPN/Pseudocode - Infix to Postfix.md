@@ -1,4 +1,4 @@
-DECLARE infix, postfix: STRING
+```DECLARE infix, postfix: STRING
 infix ← "2 + 3 * 4"
 postfix ← InfixToPostfix(infix)
 OUTPUT "Infix expression: " + infix
@@ -35,12 +35,14 @@ OUTPUT "Result: " + EvaluatePostfix(postfix)
 
 // WAIT FOR INPUT TO FINISH PROGRAM
 INPUT ""
-
+```
+```
 FUNCTION IsOperator(c: CHARACTER) RETURNS BOOLEAN
     RETURN c = "+" OR c = "-" OR c = "*" OR c = "/" OR _
 	       c = "^" OR c = "(" OR c = ")"
 END FUNCTION
-
+```
+```
 FUNCTION Precedence(c: CHARACTER) RETURNS INTEGER
     CASE OF c
         "^": RETURN 3
@@ -49,7 +51,8 @@ FUNCTION Precedence(c: CHARACTER) RETURNS INTEGER
         OTHERWISE: RETURN -1
     END CASE
 END FUNCTION
-
+```
+```
 FUNCTION InfixToPostfix(infix: STRING) RETURNS STRING
     DECLARE postfix: STRING
     DECLARE stack: STACK OF CHARACTER //You may use array instead
@@ -98,7 +101,8 @@ FUNCTION InfixToPostfix(infix: STRING) RETURNS STRING
 
     RETURN postfix
 END FUNCTION
-
+```
+```
 FUNCTION ApplyOperator(op: CHARACTER, a: REAL, b: REAL) RETURNS REAL
     CASE OF op
         "+": RETURN a + b
@@ -114,7 +118,8 @@ FUNCTION ApplyOperator(op: CHARACTER, a: REAL, b: REAL) RETURNS REAL
         OTHERWISE: RETURN 0
     END CASE
 END FUNCTION
-
+```
+```
 FUNCTION EvaluatePostfix(postfix: STRING) RETURNS REAL
     DECLARE stack: STACK OF REAL
     DECLARE token: STRING
@@ -145,3 +150,4 @@ FUNCTION EvaluatePostfix(postfix: STRING) RETURNS REAL
 
     RETURN stack.POP()
 END FUNCTION
+```
